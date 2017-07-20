@@ -1,6 +1,9 @@
 <template>
   <div>
     <h2>Wel come to phoenix vue webpack template</h2>
+    <ul>
+      <li><router-link to="/user/list">users</router-link></li>
+    </ul>
   </div>
 </template>
 
