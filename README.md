@@ -1,8 +1,10 @@
 # PhoenixVueWebpackTemplate
 
+This is the phoenix template with which vuejs(also vuex & vue-router) and webpack are integrated.
+
 To start your Phoenix app:
 
-  * Install dependencies with `mix deps.get`
+  * Install dependencies with `npm install && mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Start Phoenix endpoint with `mix phoenix.server`
 
