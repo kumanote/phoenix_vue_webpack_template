@@ -14,3 +14,23 @@ erl_crash.dump
 # secrets file as long as you replace its contents by environment
 # variables.
 /config/prod.secret.exs
+
+# front dev tool artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Since we are building assets from web/static,
+# we ignore priv/static.
+/priv/static/
+
+# for Windows
+Thumbs.db
+Desktop.ini
+
+# for OSX
+.DS_Store
+
+# swp
+*.swp

@@ -11,17 +11,16 @@ config :phoenix_vue_webpack_template, PhoenixVueWebpackTemplate.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--watch", "--color", "--config", "client/build/webpack.dev.conf.js"]]
 
 
 # Watch static and templates for browser reloading.
 config :phoenix_vue_webpack_template, PhoenixVueWebpackTemplate.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg|html)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{web/views/.*(ex)$},
-      ~r{web/templates/.*(eex)$}
+      ~r{web/views/.*(ex)$}
     ]
   ]
 
